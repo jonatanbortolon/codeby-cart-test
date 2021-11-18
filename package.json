@@ -1,8 +1,14 @@
 {
   "name": "codeby-cart-test",
   "version": "0.1.0",
-  "private": true,
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
+    "@craco/craco": "^6.4.0",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -10,28 +16,10 @@
     "@types/node": "^16.11.7",
     "@types/react": "^17.0.35",
     "@types/react-dom": "^17.0.11",
-    "autoprefixer": "10.x",
-    "cross-env": "7.x",
-    "delay-cli": "^1.1.0",
-    "npm-run-all": "4.x",
-    "postcss": "8.x",
-    "postcss-cli": "8.x",
-    "postcss-preset-env": "6.x",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "tailwindcss": "2.x",
     "typescript": "4.x"
-  },
-  "scripts": {
-    "start": "run-p watch:css react-scripts:start",
-    "build": "run-s build:css react-scripts:build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build:css": "cross-env TAILWIND_MODE=build NODE_ENV=production postcss src/styles/tailwind.css -o src/styles/index.css",
-    "watch:css": "cross-env TAILWIND_MODE=watch NODE_ENV=development postcss src/styles/tailwind.css -o src/styles/index.css --watch",
-    "react-scripts:start": "delay 5 && react-scripts start",
-    "react-scripts:build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,5 +35,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }
