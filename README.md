@@ -1,22 +1,28 @@
-# cra-template-tailwindcss-typescript
+<p align="left">
+  <img src="https://notion-emojis.s3-us-west-2.amazonaws.com/v0/svg-twitter/1f4d8.svg" width="70" title="hover text">
+</p>
 
-A streamlined [Tailwind CSS](https://tailwindcss.com) template for [Create React App](https://github.com/facebook/create-react-app) in [TypeScript](https://www.typescriptlang.org/).
+# Teste Carrinho
 
-> This template installs and sets up [Tailwind CSS](https://tailwindcss.com) with TypeScript support.
+### Objetivos:
 
-## Usage
+- Desenvolver um "carrinho de compras" usando uma API.
+- Listar os produtos, exibir o total da compra e exibir uma mensagem informando se o pedido possui frete grátis
 
-```bash
-npx create-react-app --template tailwindcss-typescript
-```
+### Prazo:
 
-## Credits
+- 3 dias corridos.
 
-This project was made possible thanks to the following projects.
+### Requisitos mínimos:
 
-1. [GeoffSelby/cra-template-tailwindcss](https://github.com/GeoffSelby/cra-template-tailwindcss) - A streamlined Tailwind CSS template for Create React App (in JavaScript).
-2. [cra-template-typescript](https://github.com/facebook/create-react-app/tree/master/packages/cra-template-typescript) - An official TypeScript template for create-react-app.
+- Listar os produtos provenientes da API.
+- Os produtos devem ter imagem, nome e preço.
+- Exibir ao fim da lista o valor total de todos os produtos.
+- Exibir o texto de frete grátis dependendo do valor do carrinho.
+- O texto de frete grátis deverá aparecer apenas se o valor for acima de **R$ 10,00**.
+- Seguir o layout.
+- Usar Flex-Box CSS.
+- Você poderá usar Vanilla JS, React, Vue ou outro framework. Sinta-se a vontade para usar a ferramenta que preferir.
+- Enviar o link do teste no github.
 
-## License
-
-MIT © [Sung M. Kim](https://sung.codes)
+Atingindo os requisitos mínimos, você poderá explorar a API e o layout. Use sua criatividade para incrementar o seu teste, deste que esteja dentro do prazo.
